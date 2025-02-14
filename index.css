@@ -1,15 +1,14 @@
-/* index.css */
 :root {
-    --bg-gradient: linear-gradient(to bottom right, #13151a, #090a0c);
-    --glass-bg: rgba(255, 255, 255, 0.05);
-    --glass-border: rgba(255, 255, 255, 0.1);
-    --text-primary: #fff;
-    --text-secondary: #dde6f2;
-    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    --button-gradient: linear-gradient(45deg, #2563eb, #7c3aed);
+    --bg-gradient: linear-gradient(to bottom right, #000000, #0a0a0a);
+    --glass-bg: rgba(255, 255, 255, 0.02);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --text-primary: #eaeaea;
+    --text-secondary: #a1a1aa;
+    --glass-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    --button-gradient: linear-gradient(90deg, #ffffff, #999999);
     --transition-timing: 0.3s ease;
-    --border-radius: 12px;
-    --bg-glass: #ffd8d8;
+    --border-radius: 10px;
+    --generate-btn: #4ade80;
 }
 
 * {
@@ -30,12 +29,14 @@ body {
 }
 
 body.light {
-    --bg-gradient: linear-gradient(to bottom, #f5f5f5, #ffffff);
-    --glass-bg: rgba(255, 255, 255, 0.5);
-    --glass-border: rgba(53, 51, 51, 0.3);
-    --text-primary: #1e293b;
-    --text-secondary: #475569;
-    --glass-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
+    --bg-gradient: linear-gradient(to bottom, #ffffff, #f8f9fa);
+    --glass-bg: rgba(0, 0, 0, 0.05);
+    --glass-border: rgba(0, 0, 0, 0.1);
+    --text-primary: #111111;
+    --text-secondary: #333333;
+    --glass-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+    --button-gradient: linear-gradient(90deg, #000000, #333333);
+    --generate-btn: black;
 }
 
 .grid-background {
@@ -163,7 +164,7 @@ main {
     border: 1px solid var(--glass-border);
     border-radius: 6px;
     color: var(--text-primary);
-    padding: 0.5rem 25px 0.5rem 0.5rem; /* Adjusted padding */
+    padding: 0.5rem 25px 0.5rem 0.5rem;
     width: 70px;
     appearance: none;
     -moz-appearance: textfield;
@@ -190,14 +191,14 @@ main {
     overflow: hidden;
     background: var(--glass-bg);
     border-left: 1px solid var(--glass-border);
-    pointer-events: auto; /* Make buttons clickable */
+    pointer-events: auto;
 }
 
 .spinner-up,
 .spinner-down {
     height: 50%;
     width: 100%;
-    background: transparent; /* Transparent background for better glass effect */
+    background: transparent;
     border: none;
     color: var(--text-primary);
     cursor: pointer;
@@ -218,7 +219,7 @@ main {
 }
 
 .generate-btn {
-    background: var(--button-gradient);
+    background: var(--generate-btn);
     color: white;
     border: none;
     padding: 0.75rem 1.5rem;
