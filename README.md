@@ -1,4 +1,4 @@
-# 🔑 SecurePass
+# SecurePass 🔑
 
 <div align="center">
 
@@ -70,21 +70,23 @@ Contributions are welcome! Here's how you can help improve SecurePass:
 
 <div align="center">
 
-### Password Generator Interface (Light Mode)
+### SecurePass Interface (Dark Mode)
 
-<img src="https://github.com/user-attachments/assets/b7b45a67-042d-4b01-a4b4-ad25ff4dd334" alt="Password Generator Main Screen (Light)" />
+![SecurePass1](./assets/SecurePass-1.png)
 
-### Password Generator Interface (Dark Mode)
+### SecurePass Interface (Light Mode)
 
-<img src="*Add Dark Mode Screenshot Here*" alt="Password Generator Main Screen (Dark)" />  *(Replace with actual screenshot)*
+![SecurePass6](./assets/SecurePass-6.png)
 
-### Generated Passwords
+### Option Selection
 
-<img src="https://github.com/user-attachments/assets/c104e254-fb8f-4a91-991b-362f1bbefb41" alt="Generated Passwords" />
+![SecurePass2](./assets/SecurePass-2.png)
 
-### Character Set Selection
+![SecurePass3](./assets/SecurePass-3.png)
 
-<img src="*Add Character Set Selection Screenshot Here*" alt="Character Set Selection" />  *(Replace with actual screenshot)*
+![SecurePass4](./assets/SecurePass-4.png)
+
+![SecurePass5](./assets/SecurePass-5.png)
 
 </div>
 
@@ -96,9 +98,11 @@ Contributions are welcome! Here's how you can help improve SecurePass:
 
 </div>
 
-## 🧑‍💻 Author
+## 👤 Author
 
-**[Ashwin S Nambiar](https://ashwin-s-nambiar.is-a.dev/)**
+### Ashwin S Nambiar
+- Portfolio: [ashwin-s-nambiar.is-a.dev](https://ashwin-s-nambiar.is-a.dev/)
+- GitHub: [@Ashwin-S-Nambiar](https://github.com/Ashwin-S-Nambiar)
 
 -----
 
