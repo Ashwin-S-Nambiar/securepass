@@ -1,29 +1,106 @@
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <title>Random Password Generator</title>
-        <link rel="stylesheet" href="index.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
-    </head>
-    <body>
-        <div class="passwd-container">
-            <h1 id="main-h1"><span id="color-h1">Generate a</span><br> random password</h1>
-            <h2 id="main-h2">Never use an insecure password again.</h2>
-            <div class="main-btns">
-                <button id="generate-pwd" onclick="generatePwd()">Generate Passwords</button>
-                <label for="pwlength">Password Length</label>
-                <input type="text" id="pwd-length" name="pwlength" autocomplete="off">
-            </div>
-            <hr align="left">
-            <div class="password-btn">
-                <button id="pwd-1"></button>
-                <button id="pwd-2"></button>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <title>SecurePass</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="grid-background"></div>
+
+    <header class="glass-header">
+        <div class="header-content">
+            <h3 class="logo">SecurePass</h3>
+            <button class="theme-toggle glass-btn" aria-label="Toggle theme">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="glass-card passwd-container">
+            <div class="content-wrapper">
+                <h1 id="main-h1">
+                    <span class="gradient-text">Generate a</span><br>
+                    <span>secure password</span>
+                </h1>
+                <h2 id="main-h2">Never use an insecure password again.</h2>
+
+                <div class="controls">
+                    <div class="length-control">
+                        <label for="pwd-length">Password Length</label>
+                        <div class="input-spinner-wrapper">
+                            <input type="number" id="pwd-length" name="pwlength" min="8" max="32" value="16">
+                            <div class="spinner-buttons">
+                                <button class="spinner-up" onclick="incrementLength(1)">▲</button>
+                                <button class="spinner-down" onclick="incrementLength(-1)">▼</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="generate-pwd" class="generate-btn" onclick="generatePwd()">
+                        Generate Passwords
+                        <div class="generate-btn-glow"></div>
+                    </button>
+                </div>
+
+                <div class="options">
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" id="include-uppercase" checked>
+                        <span class="checkbox-label">Uppercase (A-Z)</span>
+                    </label>
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" id="include-lowercase" checked>
+                        <span class="checkbox-label">Lowercase (a-z)</span>
+                    </label>
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" id="include-numbers" checked>
+                        <span class="checkbox-label">Numbers (0-9)</span>
+                    </label>
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" id="include-symbols" checked>
+                        <span class="checkbox-label">Symbols (@#$%)</span>
+                    </label>
+                </div>
+
+                <div class="password-outputs">
+                    <button id="pwd-1" class="password-display" aria-label="Copy password">
+                        <span class="placeholder">Click generate to create password</span>
+                    </button>
+                    <button id="pwd-2" class="password-display" aria-label="Copy password">
+                        <span class="placeholder">Click generate to create password</span>
+                    </button>
+                </div>
+                <div class="password-strength">
+                    <div class="strength-bars">
+                        <div class="strength-bar"></div>
+                        <div class="strength-bar"></div>
+                        <div class="strength-bar"></div>
+                        <div class="strength-bar"></div>
+                        <div class="strength-bar"></div>
+                    </div>
+                    <span class="strength-text">Password Strength</span>
+                </div>
             </div>
         </div>
-        <script src="index.js"></script>
-    </body>
+    </main>
+
+    <footer class="glass-footer">
+        <p>&copy; <span id="current-year"></span> SecurePass Generator. All rights reserved.</p>
+    </footer>
+
+    <div class="toast" id="toast">Password copied to clipboard!</div>
+
+    <script src="index.js"></script>
+</body>
+
 </html>
