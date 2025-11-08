@@ -1,4 +1,4 @@
-# SecurePass 🔑
+# SecurePass
 
 <div align="center">
 
@@ -12,7 +12,7 @@ A powerful and user-friendly password generator that creates two random password
 
 </div>
 
-## ✨ Features
+## Features
 
 - **Customizable Password Length:** Generate passwords of your preferred size using a slider.
 - **Character Set Selection:** Choose which character types to include: uppercase letters, lowercase letters, numbers, and special symbols.
@@ -22,13 +22,13 @@ A powerful and user-friendly password generator that creates two random password
 - **Simple, Clean Interface:** User-friendly design for easy password creation.
 - **Dark/Light Mode Switching:** Toggle between light and dark themes for comfortable use.
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **HTML5:** Semantic markup for structuring the content.
 - **CSS3:** Responsive styling for a polished user interface.
 - **JavaScript:** Password generation logic, interactivity, and theme switching.
 
-## 🚀 Installation
+## Installation
 
 1. **Clone the Repository:**
 
@@ -42,7 +42,7 @@ A powerful and user-friendly password generator that creates two random password
 
       **Simply open the `index.html` file in your web browser.  No further setup is required.**
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Here's how you can help improve SecurePass:
 
@@ -66,7 +66,7 @@ Contributions are welcome! Here's how you can help improve SecurePass:
 
 5.  **Open a Pull Request**
 
-## 📸 Screenshots
+## Screenshots
 
 <div align="center">
 
@@ -90,7 +90,7 @@ Contributions are welcome! Here's how you can help improve SecurePass:
 
 </div>
 
-## 🌍 Live
+## Live
 
 <div align="center">
 
@@ -98,7 +98,7 @@ Contributions are welcome! Here's how you can help improve SecurePass:
 
 </div>
 
-## 👤 Author
+## Author
 
 ### Ashwin S Nambiar
 - Portfolio: [ashwin.co.in](https://ashwin.co.in)
